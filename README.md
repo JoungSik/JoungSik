@@ -1,6 +1,16 @@
 [![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=JoungSik)](https://github.com/anuraghazra/github-readme-stats)
 
-```
-Hello, My name is JoungSik Kim.
-I working as a software developer.
-```
+<p align="center">
+  <a href="mailto:tjstlr2010@gmail.com">
+    <img src="https://img.shields.io/badge/-G--Mail-%23D14836" />
+  </a>
+  <a href="https://www.facebook.com/profile.php?id=100002406291053">
+    <img src="https://img.shields.io/badge/-Facebook-%231877F2" />
+  </a>
+  <a href="https://medium.com/@joungsik">
+    <img src="https://img.shields.io/badge/-Medium-%2312100E" />
+  </a>
+  <a href="https://www.linkedin.com/in/joungsik">
+    <img src="https://img.shields.io/badge/-LinkedIn-%230077B5" />
+  </a> 
+</p>
