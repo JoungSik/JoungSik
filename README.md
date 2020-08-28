@@ -1,4 +1,8 @@
-[![Anurag's github stats](https://github-readme-stats.vercel.app/api?username=JoungSik)](https://github.com/anuraghazra/github-readme-stats)
+<p align="center">
+  <a href="https://github.com/anuraghazra/github-readme-stats">
+    <img src="https://github-readme-stats.vercel.app/api?username=JoungSik">
+  </a>
+</p>
 
 <p align="center">
   <a href="mailto:tjstlr2010@gmail.com">
