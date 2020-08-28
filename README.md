@@ -14,7 +14,7 @@
   <a href="https://medium.com/@joungsik">
     <img src="https://img.shields.io/badge/-Medium-%2312100E" />
   </a>
-  <a href="https://www.linkedin.com/in/joungsik">
+  <a href="https://www.linkedin.com/in/joungsik" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5" />
   </a> 
 </p>
