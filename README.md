@@ -17,4 +17,7 @@
   <a href="https://www.linkedin.com/in/joungsik" target="_blank">
     <img src="https://img.shields.io/badge/-LinkedIn-%230077B5" />
   </a> 
+  <a href="https://open.kakao.com/o/sM01m96c" target="_blank">
+    <img src="https://img.shields.io/badge/-kakao-yellow" />
+  </a>
 </p>
