@@ -7,8 +7,9 @@
 | INNORIX          | 2018.03 ~ 2019.01 |
 | The Ventures Lab | 2014.01 ~ 2016.10 |
 
-### Blog
-[![github blog](https://img.shields.io/badge/GitHub-161A1F?style=for-the-badge&logo=github&logoColor=white)](https://joungsik.github.io/)
+### Site
+- [Blog](https://joungsik.github.io/)
+- [projects](https://projects.joungsik.com)
 
 ### Social
 [![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:tjstlr2010@gmail.com)
