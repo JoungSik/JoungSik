@@ -1,0 +1,65 @@
+name: Sync README to Blog Repository
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  sync-readme:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v3
+        with:
+          submodules: true
+          fetch-depth: 0
+      
+      # 2. README.md 파일 읽기 및 변수 저장
+      - name: Read README content
+        id: readme
+        run: |
+          # README.md 내용을 변수에 저장 (멀티라인 처리)
+          {
+            echo 'content<<EOF'
+            cat README.md
+            echo EOF
+          } >> $GITHUB_OUTPUT
+
+      - name: Checkout destination repo
+        uses: actions/checkout@v3
+        with:
+          repository: ${{ github.actor }}/blog
+          token: ${{ secrets.TOKEN }}
+          path: blog-repo
+      
+      # 4. 파일 업데이트 및 커밋
+      - name: Update README in blog repository
+        run: |
+          cd blog-repo
+          
+          # README 내용을 대상 파일에 복사
+          echo "${{ steps.readme.outputs.content }}" > content/README.md
+          
+          # Git 설정
+          git config user.name "${{ github.actor }}"
+          git config user.email "tjstlr2010@gmail.com"
+          
+          # 변경사항 커밋 및 푸시
+          git add content/README.md
+          git diff-index --quiet HEAD || git commit -m "🔄 Auto-sync README from ${{ github.actor }}/${{ github.actor }} repository
+          
+          Updated: $(date '+%Y-%m-%d %H:%M:%S UTC')
+          Source: ${{ github.sha }}"
+          
+          git push
+
+      # 5. 성공/실패 알림 (선택사항)
+      - name: Notify completion
+        if: always()
+        run: |
+          if [ "${{ job.status }}" == "success" ]; then
+            echo "✅ README 동기화가 성공적으로 완료되었습니다!"
+          else
+            echo "❌ README 동기화 중 오류가 발생했습니다."
+          fi
