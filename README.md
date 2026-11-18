@@ -10,7 +10,7 @@
 
 ### Site
 - [blog](https://joungsik.github.io/)
-- [redmine](https://redmine.joungsik.com)
+- [my-claude-skills](https://github.com/JoungSik/my-claude-skills)
 - [console](https://console.joungsik.com)
 - [banjiha](https://js-banjiha.cloud/)
 
