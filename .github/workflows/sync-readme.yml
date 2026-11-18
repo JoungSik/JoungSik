@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout source repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           submodules: true
           fetch-depth: 0
@@ -27,7 +27,7 @@ jobs:
           } >> $GITHUB_OUTPUT
 
       - name: Checkout destination repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v7
         with:
           repository: ${{ github.actor }}/blog
           token: ${{ secrets.TOKEN }}
